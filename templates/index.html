@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF=8">
+    <title>Sea food</title>
+    <link rel = "stylesheet" href="{{ url_for('static',filename='/3style.css') }}">
+</head>
+<body>
+  <section id="nav-bar" class="container">
+    <header class="nav-bar">
+      <div class="brand"><a href="#"><h1>Welcome!</h1></a></div>
+      <div class="nav-list">
+        <ul>
+          <li><a href="{{url_for('login')}}">Login</a></li>
+          <li><a href="{{url_for('two')}}">SignUp</a></li>
+        </ul>
+      </div>
+    </header>
+  </section>
+    <section id="hero" class="hero container">
+      <div class="hero-info">
+        <h1 class="hero-info-heading">Internet of Sea Food Supply Chain </h1>
+        <a href="{{url_for('login')}}"type="button" class="hero-info-button">Explore</a>
+      </div>
+        <div class="wave wave1"></div>
+        <div class="wave wave2"></div>
+        <div class="wave wave3"></div>
+        <div class="wave wave4"></div>
+    </section>
+</body>
+</html>

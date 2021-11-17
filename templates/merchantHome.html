@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="{{ url_for('static',filename='/style.css') }}">
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Welcome Admin</title>
+      </head>
+      <body>
+          <div>
+            <nav>
+              <a href="{{url_for('logout')}}">Logout</a>
+            </nav>
+          <img class="homebanner" src="{{url_for('static',filename='/merchanthome.jpg')}}">
+          <article>
+
+        <form class="form1" action = "http://localhost:5000/saveFishData" method="post">
+          <input class="un" type="text" align="center" placeholder="Product ID" name="product_id">
+          <input class="un" type="text" align="center" placeholder="Species" name="species">
+          <input class="un" type="text" align="center" placeholder="Weight" name="weight">
+          <input class="un" type="text" align="center" placeholder="L1" name="L1">
+          <input class="un" type="text" align="center" placeholder="L2" name = "L2">
+          <input class="un" type="text" align="center" placeholder="L3" name="L3">
+          <input class="un" type="text" align="center" placeholder="Height" name="height">
+          <input class="un" type="text" align="center" placeholder="Width" name="width">
+          <input class="un" type="text" align="center" placeholder="Storage Temperature" name="storage_temperature">
+          <input class="un" type="text" align="center" placeholder="Estimated Storage Life in Months" name="estimated_storage_life_in_months">
+          <input class="un" type="text" align="center" placeholder="Nutrients" name="nutrients">
+          <input class="un" type="text" align="center" placeholder="Best Before Calculated" name="best_before_calculated">
+          <input class="un" type="text" align="center" placeholder="Storage Affecting Factors" name="storage_affecting_factor">
+          <input class="un" type="text" align="center" placeholder="Price" name="price">
+          <button type="submit" class="submit" align="center">Submit</button>          
+        </div>
+        </article>
+        </div>
+      </body>
+</html>

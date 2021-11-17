@@ -1,0 +1,269 @@
+body {
+    background-color: rgb(213, 223, 242);
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.main {
+    background-color: white;
+    width: 620px;
+    height: 550px;
+    margin: 5em auto;
+    border-radius: 1.5em;
+    box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14);
+}
+
+.mainSignup{
+    background-color: white;
+    width: 620px;
+    height: 700px;
+    margin: 5em auto;
+    border-radius: 1.5em;
+    box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14);
+}
+
+.homebanner {
+  width: 100%;
+  z-index: 0;
+  margin: 0px;
+  padding: 0px
+}
+
+.sign {
+    padding-top: 20px;
+    color: #2F456F;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    font-size: 23px;
+}
+
+.welcome {
+  padding-top: 20px;
+  color: #2F456F;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: bold;
+  font-size: 35px;
+  align-content: center;
+}
+
+.actioncontainer {
+  margin-left: 150px;
+  margin-top: 50px;
+  color: rgb(0, 0, 0);
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 30px;
+  background-color: white;
+}
+
+.un {
+width: 76%;
+color: rgb(38, 50, 56);
+font-weight: 700;
+font-size: 14px;
+letter-spacing: 1px;
+background: rgba(136, 126, 126, 0.04);
+padding: 10px 20px;
+border: none;
+border-radius: 20px;
+outline: none;
+box-sizing: border-box;
+border: 2px solid rgba(0, 0, 0, 0.02);
+margin-bottom: 50px;
+margin-left: 70px;
+text-align: center;
+margin-bottom: 27px;
+font-family: 'Ubuntu', sans-serif;
+}
+
+.checkbox{
+    margin-left: 250px;
+} 
+
+
+
+form.form1 {
+    padding-top: 20px;
+}
+
+.pass {
+        width: 76%;
+color: rgb(38, 50, 56);
+font-weight: 700;
+font-size: 14px;
+letter-spacing: 1px;
+background: rgba(136, 126, 126, 0.04);
+padding: 10px 20px;
+border: none;
+border-radius: 20px;
+outline: none;
+box-sizing: border-box;
+border: 2px solid rgba(0, 0, 0, 0.02);
+margin-bottom: 50px;
+margin-left: 70px;
+text-align: center;
+margin-bottom: 40px;
+font-family: 'Ubuntu', sans-serif;
+}
+
+
+.un:focus, .pass:focus {
+    border: 2px solid rgba(0, 0, 0, 0.18) !important;
+    
+}
+
+.submit {
+  cursor: pointer;
+    border-radius: 5em;
+    color: #fff;
+    background: linear-gradient(to right, rgb(48, 39, 176), rgb(64, 92, 251));
+    border: 0;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    font-family: 'Ubuntu', sans-serif;
+    margin-left: 40%;
+    font-size: 13px;
+    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.04);
+}
+
+.forgot {
+    text-shadow: 0px 0px 3px rgba(117, 117, 117, 0.12);
+    color: #052755;
+    padding-top: 40px;
+}
+
+a {
+    color: #7490F9;
+}
+
+/*css for admin home*/
+section {
+    height: 100px;
+    background: #7490F9;
+  }
+  section span {
+    margin: 0;
+    font-size: 400%;
+    text-align: center;
+    line-height: 1;
+    padding-top: calc(50vh - 20pt);
+    display: block;
+    font-weight: 700;
+  }
+  header {
+    width: 100%;
+    padding: 1em;
+    font-size: 140%;
+    position: absolute;
+    left: 0;
+    transition: opacity .2s ease-in-out;
+    text-align: center;
+  }
+  header h1 {
+    font-weight: 600;
+    display: inline;
+    margin: 0;
+    padding: 0;
+    font-size: inherit;
+    color: white;
+  }
+  nav a {
+    display: inline-block;
+    outline: none;
+    text-decoration: none;
+    opacity: .7;
+    padding: 0 .5em;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    color: black;
+    transition: opacity .2s ease-in-out;
+  }
+  nav a:hover,
+  nav a:focus {
+    opacity: 1;
+  }
+  article {
+     
+    margin: 10px;
+    margin-top: 40px;
+    padding: 1em;
+    font-size: 140%;
+    max-width: 800px;
+    background: white;
+    box-shadow: rgba(0,0,0,.05) 0 3px 15px;
+  }
+  article p {
+    margin: 0;
+    color: #333;
+  }
+  article p + p {
+    margin-top: .7em;
+  }
+  @media (min-width: 500px) {
+    header {
+      text-align: left;
+    }
+    nav {
+      float: right;
+    }
+    article {
+      margin: 3.5em auto 0;
+      padding: 2em;
+    }
+  }
+
+.tabledisplay {
+  font-size: 140%;
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  min-width: 400px;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.tabledisplay thead tr {
+  background-color: rgb(93, 114, 235);
+  color: #ffffff;
+  text-align: left;
+  font-weight: bold;
+}
+
+.tabledisplay th,
+.tabledisplay td {
+  padding: 12px 15px;
+}
+
+.tabledisplay tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.tablediplsay tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.tabledisplay tbody tr:last-of-type {
+  border-bottom: 2px solid rgb(93, 114, 235);
+}
+
+.Appr{
+  width: 80px;
+  background-color: rgb(93, 114, 235);
+  border: none;
+  outline: none;
+  height: 25px;
+  border-radius: 49px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 400;
+
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+
+@media (max-width: 600px) {
+    .main {
+        border-radius: 0px; 
+    }}

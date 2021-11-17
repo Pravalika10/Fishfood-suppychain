@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="{{ url_for('static',filename='/style.css') }}">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Welcome Admin</title>
+</head>
+
+<body>
+
+  <div class="bgr">
+    <nav>
+      <a href="{{url_for('logout')}}">Logout</a>
+    </nav>
+    <img class="homebanner" src="{{url_for('static',filename='/adminhome.jpg')}}">
+
+    <p class="welcome"> Merchant List :- </p>
+    <table class="tabledisplay" cellspacing="0" width="75%">
+      <thead>
+        <tr>
+          {% for head in header %}
+          <th scope="col"><b>{{head}}</b></th>
+          {% endfor %}
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for data_point in merchants %}
+        <tr>
+          {% for item in data_point %}
+          <td class="tabledata">{{item}}</td>
+          {% endfor %}
+          <td class="tabledata">
+            <form class="approval_form" action="http://localhost:5000/verify" method="post">
+              <input type="hidden" name="merchant" value="{{data_point}}" />
+              <button class="Appr" type="submit" name="submit" value=1>Approve</button>
+              <button class="Appr" type="submit" name="submit" value=0>Reject</button>
+            </form>
+          </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+
+  </div>
+</body>
+
+</html>
